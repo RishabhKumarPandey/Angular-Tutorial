@@ -1,2 +1,14 @@
 <h1 style="text-align: center; color: red;">Welcome to my world</h1>
 <p style="text-align: center;">{{title}} app is runnung</p>
+<h2>This is component directive example</h2>
+<button (click)= "btnclick()">Click me</button>
+<br>
+<br>
+<button *ngIf="!userLoggedIn">LogIn</button>
+<button *ngIf="userLoggedIn">Logout</button>
+
+<ul>
+    <li *ngFor="let car of cars"> 
+            {{car}}
+    </li>
+</ul>
