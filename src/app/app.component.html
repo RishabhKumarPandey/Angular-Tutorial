@@ -7,8 +7,15 @@
 <button *ngIf="!userLoggedIn">LogIn</button>
 <button *ngIf="userLoggedIn">Logout</button>
 
-<ul>
+<!-- <ul>
     <li *ngFor="let car of cars"> 
             {{car}}
     </li>
-</ul>
+</ul> -->
+
+<div *ngFor="let car of cars" style="background: cyan; padding: 10px; margin: 10px">
+<h2>{{car.name}}</h2>
+<p>{{car.color}}</p>
+<p>{{car.speed}}</p>
+</div>
+<h1 [ngStyle]="{color: "getColor()"}">Great Learning Angular</h1>
